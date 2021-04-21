@@ -1,6 +1,5 @@
 import React from 'react';
-import { Image } from 'react-native';
-import {Text, View , StyleSheet} from 'react-native';
+import {Text, View , StyleSheet ,Image } from 'react-native';
 import yt from './src/icons/youtube.png';
 
 const App = () => {
