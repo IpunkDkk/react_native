@@ -1,15 +1,31 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import { Image } from 'react-native';
+import {Text, View , StyleSheet} from 'react-native';
+import yt from './src/icons/youtube.png';
 
 const App = () => {
   return (
-    <View style={{flexDirection:'row'}}>
-      <View style={{backgroundColor:'#41fc03' , flex:1 , height:50}} />
-      <View style={{backgroundColor:'#2596be' , flex:1 , height:50}} />
-      <View style={{backgroundColor:'#AB6ABD' , flex:1 , height:50}} />
-      <View style={{backgroundColor:'#BD6A8F' , flex:1 , height:50}} />
+    <View style={style.container}>
+      <Image source={yt} style={style.gambar}  />
+      <Text style={style.text}>Youtube Mobile</Text>
     </View>
   )
 };
+
+const style = StyleSheet.create({
+  container : {
+    flex:1, 
+    alignItems:'center', 
+    justifyContent:'center',
+  },
+  text : {
+    fontSize:20,
+    fontWeight:'bold'
+  },
+  gambar : {
+    height:150 , 
+    width:150
+  }
+});
 
 export default App;
