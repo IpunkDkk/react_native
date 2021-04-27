@@ -8,14 +8,14 @@ import airplane from '../../icons/airplane.webp';
 const Header = () => {
   return (
     <View style={style.container}>
-      <View style={{flex: 4, height: 50}}>
+      <View style={{flex: 6, height: 50}}>
         <Text style={style.txt} >Instagram</Text>
       </View>
-      <View style={{flex: 1, height: 50}} >
-      <Image source={love} style={{width:30, height:30, alignItems:'flex-end'}} />
+      <View style={{flex: 1, height: 50,  alignItems:'center'}} >
+      <Image source={love} style={{width:30, height:30}} />
       </View>
-      <View style={{flex: 1, height: 50}} >
-      <Image source={airplane} style={{width:30, height:30, alignItems:'flex-end'}} />
+      <View style={{flex: 1, height: 50,  alignItems:'center' , alignContent:'center'}} >
+      <Image source={airplane} style={{width:30, height:30}} />
       </View>
     </View>
   );
@@ -24,14 +24,18 @@ const Header = () => {
 const style = StyleSheet.create({
   container: {
     flexDirection: 'row',
+    padding: 10,
+    alignItems:'center',
   },
   img: {
     height:30,
     width:30,
+
   },
   txt: {
+    marginRight:10,
     fontSize:30,
-    textAlign:'left',
+    fontWeight:'bold',
   },
 });
 
